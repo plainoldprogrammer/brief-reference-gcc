@@ -30,3 +30,8 @@ NOTE 1: Need the header file (.h) and the object file (.o) file.
 
 NOTE 2: Dont need the .cpp file.
 ```
+
+#### Compile a program and a library
+```
+> g++ -o program.exe main.cpp library.cpp
+```
