@@ -7,3 +7,8 @@ Brief reference of the GNU Compiler Collection.
 ```
 > g++ -std=c++11 main.cpp -o program
 ```
+
+#### Save the preprocessor output file
+```
+> g++ -E main.cpp -o main.ii
+````
