@@ -35,3 +35,12 @@ NOTE 2: Dont need the .cpp file.
 ```
 > g++ -o program.exe main.cpp library.cpp
 ```
+
+#### Compile a program and link to a library
+```
+> g++ -o program.exe main.cpp library.a
+
+NOTE 1: Need the header file (.h) file and the library (.a).
+
+NOTE 2: Dont need the .cpp file.
+```
