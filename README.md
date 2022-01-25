@@ -44,3 +44,10 @@ NOTE 1: Need the header file (.h) file and the library (.a).
 
 NOTE 2: Dont need the .cpp file.
 ```
+
+#### Create a library from an object file
+```
+> ar rcs library.a library.o
+
+NOTE: The library that will be generated is the .a file.
+```
