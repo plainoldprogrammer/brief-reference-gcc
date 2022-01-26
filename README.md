@@ -51,3 +51,8 @@ NOTE 2: Dont need the .cpp file.
 
 NOTE: The library that will be generated is the .a file.
 ```
+
+#### Compile code with symbolic debugging information
+```
+> g++ -g main.cpp
+```
