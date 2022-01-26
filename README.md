@@ -56,3 +56,12 @@ NOTE: The library that will be generated is the .a file.
 ```
 > g++ -g main.cpp
 ```
+
+#### Compile and link with allegro library (debug)
+```
+> g++ -Wall -fexceptions -g -IC:\Users\Arturo\libs\allegro-5.0.10-mingw-4.7.0\include -c main.cpp -o main.o
+
+> g++ -o program.exe main.o allegro-5.0.10-monolith-mt-debug.dll
+
+NOTE:	Must provide the .dll file for linking and runtime.
+```
