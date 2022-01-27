@@ -65,3 +65,12 @@ NOTE: The library that will be generated is the .a file.
 
 NOTE:	Must provide the .dll file for linking and runtime.
 ```
+
+#### Compile and link with allegro library (release)
+```
+> g++ -Wall -fexceptions -O2 -IC:\Users\Arturo\libs\allegro-5.0.10-mingw-4.7.0\include -c main.cpp -o main.o
+
+> g++ -o snake.exe main.o  -s allegro-5.0.10-monolith-mt.dll
+
+NOTE:	Must provide the .dll file for linking and runtime.
+```
