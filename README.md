@@ -74,3 +74,24 @@ NOTE:	Must provide the .dll file for linking and runtime.
 
 NOTE:	Must provide the .dll file for linking and runtime.
 ```
+
+#### Compile a OpenGL application using SFML (debug)
+```
+> g++ -Wall -fexceptions -std=c++14 -g -IC:\Users\Arturo\libs\SFML-2.5.1\include -c main.cpp -o main.o
+
+> g++ -LC:\Users\Arturo\libs\SFML-2.5.1\lib -o program.exe main.o C:\Windows\System32\opengl32.dll sfml-graphics-d-2.dll sfml-audio-d-2.dll sfml-network-d-2.dll sfml-window-d-2.dll sfml-system-d-2.dll
+
+NOTE 1: You must provide the following SFML files for linking:
+
+			sfml-graphics-d-2.dll 
+			sfml-audio-d-2.dll 
+			sfml-network-d-2.dll 
+			sfml-window-d-2.dll 
+			sfml-system-d-2.dll
+
+NOTE 2: Ensure that your system provide the OpenGL dll file at "C:\Windows\System32\opengl32.dll".
+
+NOTE 3: Ensure the compiler compatibility.
+
+NOTE 4: Ensure the compiler architecture compatibiliity with the lib.
+```
