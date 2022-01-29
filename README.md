@@ -95,3 +95,24 @@ NOTE 3: Ensure the compiler compatibility.
 
 NOTE 4: Ensure the compiler architecture compatibiliity with the lib.
 ```
+
+#### Compile a OpenGL application using SFML (release)
+```
+> g++ -Wall -fexceptions -std=c++14 -g -IC:\Users\Arturo\libs\SFML-2.5.1\include -c main.cpp -o main.o
+
+> g++ -LC:\Users\Arturo\libs\SFML-2.5.1\lib -o program.exe main.o C:\Windows\System32\opengl32.dll sfml-graphics-2.dll sfml-audio-2.dll sfml-network-2.dll sfml-window-2.dll sfml-system-2.dll
+
+NOTE 1: You must provide the following SFML files for linking:
+
+			sfml-graphics-2.dll
+			sfml-audio-2.dll
+			sfml-network-2.dll
+			sfml-window-2.dll
+			sfml-system-2.dll
+
+NOTE 2:	Ensure that your system provide the OpenGL dll file at "C:\Windows\System32\opengl32.dll".
+
+NOTE 3: Ensure the compiler compatibility.
+
+NOTE 4: Ensure the compiler architecture compatibiliity with the lib.
+```
