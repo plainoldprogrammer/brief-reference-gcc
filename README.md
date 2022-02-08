@@ -137,7 +137,7 @@ NOTE 4: Ensure the compiler architecture compatibiliity with the lib.
 // Link
 > g++ -LC:\Users\Arturo\libs\SFML-2.5.1\lib -o program.exe main.o C:\Windows\System32\opengl32.dll sfml-graphics-d-2.dll sfml-audio-d-2.dll sfml-network-d-2.dll sfml-window-d-2.dll sfml-system-d-2.dll -lopengl32
 
-NOTE:	Mmust prove the .dll files in the same directory of the source file at linking time.
+NOTE:	Must prove the .dll files in the same directory of the source file at linking time.
 ```
 
 #### Compile and link in the same step an OpenGL program
@@ -145,5 +145,5 @@ NOTE:	Mmust prove the .dll files in the same directory of the source file at lin
 // Compile and Link
 > g++ -IC:\Users\Arturo\libs\SFML-2.5.1\include -LC:\Users\Arturo\libs\SFML-2.5.1\lib -o program.exe main.cpp C:\Windows\System32\opengl32.dll sfml-graphics-d-2.dll sfml-audio-d-2.dll sfml-network-d-2.dll sfml-window-d-2.dll sfml-system-d-2.dll -lopengl32
 
-NOTE:	Mmust prove the .dll files in the same directory of the source file at linking time.
+NOTE:	Must prove the .dll files in the same directory of the source file at linking time.
 ```
