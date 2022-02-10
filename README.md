@@ -161,3 +161,8 @@ NOTE: The -DSFML_STATIC is the most important flag here.
 
 NOTE: Must provide the allegro-5.0.10-monolith-mt.dll file at runtime.
 ```
+
+#### Compile and link dinamically with Allegro library and Easylogging++ library
+```
+> g++ easylogging++.cc main.cpp -std=c++11 -I C:\Users\Arturo\libs\allegro-5.0.10-mingw-4.7.0\include allegro-5.0.10-monolith-mt-debug.dll -o game.exe
+```
