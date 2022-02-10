@@ -154,3 +154,10 @@ NOTE: Must prove the .dll files in the same directory of the source file at link
 
 NOTE: The -DSFML_STATIC is the most important flag here.
 ````
+
+#### Compile and link dinamycally with Allegro library
+```
+> g++ main.cpp -o game.exe -IC:\Users\Arturo\Desktop\allegro-5.0.10-mingw-4.7.0\include C:\Users\Arturo\Desktop\allegro-5.0.10-mingw-4.7.0\bin\allegro-5.0.10-monolith-mt.dll
+
+NOTE: Must provide the allegro-5.0.10-monolith-mt.dll file at runtime.
+```
