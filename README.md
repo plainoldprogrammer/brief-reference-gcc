@@ -166,3 +166,12 @@ NOTE: Must provide the allegro-5.0.10-monolith-mt.dll file at runtime.
 ```
 > g++ easylogging++.cc main.cpp -std=c++11 -I C:\Users\Arturo\libs\allegro-5.0.10-mingw-4.7.0\include allegro-5.0.10-monolith-mt-debug.dll -o game.exe
 ```
+
+#### Compile a DearImGUI demo
+```
+> g++ imgui_demo.cpp imgui_draw.cpp imgui_widgets.cpp imgui.cpp imgui_impl_allegro5.cpp  main.cpp -IC:\Users\Arturo\libs\allegro-mingw-gcc5.3.0-x86-static-5.2.1\allegro\include C:\Users\Arturo\libs\allegro-mingw-gcc5.3.0-x86-static-5.2.1\allegro\bin\allegro_monolith-5.2.dll -o demo
+
+NOTE 1:	Check the compiler version to be compatible with the Allegro5 library.
+
+NOTE 2:	This is a modern Allegro5 version (because imgui uses modern Allegro5 features).
+```
