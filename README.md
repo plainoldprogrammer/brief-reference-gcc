@@ -175,3 +175,26 @@ NOTE 1:	Check the compiler version to be compatible with the Allegro5 library.
 
 NOTE 2:	This is a modern Allegro5 version (because imgui uses modern Allegro5 features).
 ```
+
+#### Predefine name as a macro
+```
+> g++ -DWINDOWS main.cpp -o program
+
+or
+
+> g++ -DLINUX main.cpp -o program
+
+or
+
+> g++ -DMACOS main.cpp -o program
+
+In the .h or .cpp file you should use this code:
+
+    #ifdef WINDOWS
+    #define OPERATING_SYSTEM "Windows Operating System"
+    #elif LINUX
+    #define OPERATING_SYSTEM "Linux Operating System"
+    #elif MACOS
+    #define OPERATING_SYSTEM "MacOS Operating System"
+    #endif
+```
