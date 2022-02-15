@@ -198,3 +198,10 @@ In the .h or .cpp file you should use this code:
     #define OPERATING_SYSTEM "MacOS Operating System"
     #endif
 ```
+
+#### Dissable assertions while compiling the program
+```
+> g++ -NDEBUG main.cpp -o program
+
+NOTE: The defined macro named NDEBUG disables the Assert macro.
+```
