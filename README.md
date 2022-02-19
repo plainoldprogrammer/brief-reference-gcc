@@ -214,3 +214,12 @@ NOTE 1: The compiler compatibility with the sfml binaries is the MOST IMPORTANT 
 
 NOTE 2: The dll files must be provide in the current directory before the compilation.
 ```
+
+#### Compile and link statically with the SFML library
+```
+> g++ -DSFML_STATIC -std=c++11 src\Ball.cpp src\Bar.cpp src\Brick.cpp src\easylogging++.cc main.cpp -Iinclude -I"%home%\libs\SFML-2.5.1\include" -L"%home%libs\SFML-2.5.1\lib" %home%\libs\SFML-2.5.1\lib\libsfml-graphics-s.a %home%\libs\SFML-2.5.1\lib\libsfml-audio-s.a %home%\libs\SFML-2.5.1\lib\libsfml-network-s.a %home%\libs\SFML-2.5.1\lib\libsfml-window-s.a %home%\libs\SFML-2.5.1\lib\libsfml-system-s.a C:\Windows\System32\opengl32.dll C:\Windows\System32\gdi32.dll C:\Windows\System32\winmm.dll -o game-statically
+
+NOTE 1: -DSFML_STATIC flag is one of the most important parts.
+
+NOTE 2: opengl32, gdi32 and winmm MUST BE linked. Otherwise wont work the linker.
+```
