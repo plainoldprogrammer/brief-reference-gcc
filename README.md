@@ -233,3 +233,8 @@ NOTE 2: opengl32, gdi32 and winmm MUST BE linked. Otherwise wont work the linker
 ```
 $ g++ -std=c++11  `fltk-config --cxxflags` main.cpp `fltk-config --ldflags` -o program
 ````
+
+#### Compile and link with FLTK library
+```
+$ g++ -I/usr/local/include main.cpp -o program -L/usr/local/lib -lfltk
+```
