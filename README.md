@@ -238,3 +238,8 @@ $ g++ -std=c++11  `fltk-config --cxxflags` main.cpp `fltk-config --ldflags` -o p
 ```
 $ g++ -I/usr/local/include main.cpp -o program -L/usr/local/lib -lfltk
 ```
+
+#### Compile a program that uses OpenGL on FLTK
+```
+$ g++ `fltk-config --cxxflags` main.cpp `fltk-config --ldflags` -lopengl32 -lfltk_gl -o program
+```
