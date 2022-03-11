@@ -243,3 +243,10 @@ $ g++ -I/usr/local/include main.cpp -o program -L/usr/local/lib -lfltk
 ```
 $ g++ `fltk-config --cxxflags` main.cpp `fltk-config --ldflags` -lopengl32 -lfltk_gl -o program
 ```
+
+#### Compile the wxWidgets installed source code
+```
+C:\wxWidgets-3.1.3\build\msw>mingmingw32-make -f makefile.gcc BUILD=release SHARED=1 MONOLITHIC=1 UNICODE=1
+
+NOTE: You must have instelled previously the wxWidgets source code in your computer.
+```
