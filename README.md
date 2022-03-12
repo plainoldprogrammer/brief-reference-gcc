@@ -250,3 +250,8 @@ C:\wxWidgets-3.1.3\build\msw>mingmingw32-make -f makefile.gcc BUILD=release SHAR
 
 NOTE: You must have instelled previously the wxWidgets source code in your computer.
 ```
+
+#### Compile and Link with wxWidgets library
+```
+> g++ main.cpp -IC:\Users\plainoldprogrammer\libs\wxWidgets-3.1.3\include -IC:\Users\plainoldprogrammer\libs\wxWidgets-3.1.3\lib\gcc_dll\mswu -LC:\Users\plainoldprogrammer\libs\wxWidgets-3.1.3\lib\gcc_dll -lwxmsw31u -o program
+```
