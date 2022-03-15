@@ -255,3 +255,8 @@ NOTE: You must have instelled previously the wxWidgets source code in your compu
 ```
 > g++ main.cpp -IC:\Users\plainoldprogrammer\libs\wxWidgets-3.1.3\include -IC:\Users\plainoldprogrammer\libs\wxWidgets-3.1.3\lib\gcc_dll\mswu -LC:\Users\plainoldprogrammer\libs\wxWidgets-3.1.3\lib\gcc_dll -lwxmsw31u -o program
 ```
+
+#### Save all the output during the compilation proccess
+```
+> g++ -save-temps person.cpp main.cpp
+```
